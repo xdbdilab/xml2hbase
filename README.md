@@ -1,2 +1,5 @@
-# xml2hbase
+# XML2HBase
 XML2HBase: Storing and Querying Large Collections of XML Documents Using a NoSQL Database System
+
+##Abstract
+Many big data applications such as smart transportation, healthcare, and e-commerce need to store and query large collections of small XML documents, which has become a fundamental problem. However, existing solutions are inadequate to deliver satisfactory query performance in such circumstances. In this paper, we propose a framework named XML2HBase to address this problem using HBase, a widely deployed NoSQL database. Within this framework, we design a novel encoding scheme called Pathed-Dewey Order and a two-layer mapping method to store XML documents in HBase tables. XML queries, which are represented as XPath expressions, are evaluated through their translation into queries over HBase tables. Based on an in-depth analysis of the characteristics of the proposed approach, we design and integrate four optimization strategies to reduce storage space and query response time. Extensive experiments on two well-known XML benchmarks demonstrate the superior performance of XML2HBase over three state-of-the-art methods.
